@@ -12,6 +12,7 @@ module TsvBuddy
     @data = parse_tsv(tsv_lines, keys)
   end
 
+  # parse tsv lines into hash format
   def parse_tsv(tsv_lines, keys)
     output = []
     tsv_lines.each do |line|
